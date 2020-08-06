@@ -1,0 +1,5 @@
+So I first work on getting is consistint working and i did but it was taking too long. so then i worked on the other one that would
+remove values from is posibble I started getting that working. 
+
+How i did it was i had my function look at the cell then at the neighbors looking to take away values on the start it would take away all the 
+values that were put in, and it will continue to do that for the whole program. 

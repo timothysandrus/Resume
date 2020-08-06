@@ -1,0 +1,23 @@
+You solver does not always find the correct solution.  This is due
+to errors in your isConsistent function.
+
+isConsistent
+------------
+
+In both check the contents of the cell and examining the neighbors you have
+an error.  You need to make sure that the other location that you are checking
+is not the same as location.  This is why on some of the puzzles, you
+are returning an incorrect soluition.  Until you get this fixed, you 
+should comment out your code in infer.  You will know your code is good when
+it is submitted for testing and every example either passes of runs out
+of time.
+
+infer
+-----
+
+You cannot append to a list that you are looping through.  Change
+the for loop to a while loop.  After that this should work.
+
+After you fix the bugs and it works correctly on all of the cases.  You
+should consider implementing the MRV heuristic for move ordering.  And
+then consider adding some more sophistacated logic to infer.
