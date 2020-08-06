@@ -1,0 +1,4 @@
+I just thought that you could get the distance to it by taking the current number in the array's placement minis the current number because since it starts at zero it the numbers are going to their number then divide it by size twice once for the int the next for the remander and that would give you how many moves for a given x and then i just summed them together
+
+
+same but lessen the unnecessary code and checks also added a dictionary that adds new heuristics for each element not including 0 or if the element is in it correct place then it doesn't do extra calculations when they have already been done before. saving time and running faster

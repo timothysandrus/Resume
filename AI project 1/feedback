@@ -1,0 +1,28 @@
+Tim Andrus
+Contest 1 feedback
+
+1 day late
+
+Performance 75.02
+-----------------
+
+You performance is ok, but does poorly on more difficult examples.  This
+is evidence that you need to use a stronger heuristic.
+
+Code
+----
+
+You are correctly implementing A* but are not correctly implementing
+the heuristic.  You don't need the casts to int or the condition
+if x < ...  In either case you need to be adding the two absolute values.
+This cause your heuristic to be too small and perform poorly.  Also, 
+there are ways to implement it without the calls to index that is much 
+faster.  See the email I will send out to the class about the Manhattan
+metric.
+
+
+Description
+-----------
+
+Please put this in the git repo and call it description.txt.  You should
+make sure to discuss the steps you take to test and improve your code.
