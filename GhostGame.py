@@ -12,8 +12,8 @@ global Lost
 Lost = 0
 global word
 word =""
-global fuck
-fuck = 1
+global duck
+duck = 1
 def strike(a):
     global Lost
     if(a%2 == 0):
@@ -29,7 +29,7 @@ def strike(a):
 def ghost(a):
     global Lost
     global word
-    global fuck
+    global duck
     global mylist2
     if(a%2 == 0):
         w = str(input('Enter a Letter player 1\n'))
@@ -39,13 +39,13 @@ def ghost(a):
             return ghost(a)
         elif(w in alph):
             for test in mylist2:
-                if(word + w == test[:fuck]):
+                if(word + w == test[:duck]):
                     jank = []
                     for t2 in mylist2:
-                        if(word+w == t2[:fuck]):
+                        if(word+w == t2[:duck]):
                             jank.append(t2)
                     mylist2 = jank
-                    fuck += 1
+                    duck += 1
                     return w
             strike(a)
             if(Lost == -1):
@@ -64,13 +64,13 @@ def ghost(a):
             return ghost(a)
         elif(w in alph):
             for test in mylist2:
-                if(word + w == test[:fuck]):
+                if(word + w == test[:duck]):
                     jank = []
                     for t2 in mylist2:
-                        if(word+w == t2[:fuck]):
+                        if(word+w == t2[:duck]):
                             jank.append(t2)
                     mylist2 = jank
-                    fuck += 1   
+                    duck += 1   
                     return w
             strike(a)
             if(Lost == -1):
